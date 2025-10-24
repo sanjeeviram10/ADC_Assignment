@@ -19,5 +19,26 @@ This project reads temperature from an **LM35 sensor** using **STM32F401CCU6 ADC
 3. Compile and flash code to STM32F401CCU6.
 4. ESP32 or PC can read the ADC values via UART.
 
+# ADC_receiver - ESP32 UART Receiver for LM35
+
+This project runs on **ESP32** and receives ADC values from the STM32 project via UART. It converts the ADC values to temperature in Celsius and blinks an LED if temperature exceeds thresholds.
+
+## Features
+- Reads ADC values from STM32 over UART (RX pin 16)
+- Converts ADC to voltage, then to temperature
+- Blinks onboard LED (GPIO2) if temperature > 40°C
+- Simple switch-case to control LED blinking rate
+
+## Pin Configuration
+- **GPIO16** → RX (connect to STM32 TX PB6)
+- **GPIO2** → LED
+
+## Usage
+1. Connect STM32 PB6 → ESP32 RX (GPIO16)
+2. Connect LED to GPIO2 (or use onboard LED)
+3. Upload code to ESP32
+4. Open Serial Monitor to view temperature readings
+
 ## Author
-Sanjeeviram Lap
+Sanjeeviram M
+
