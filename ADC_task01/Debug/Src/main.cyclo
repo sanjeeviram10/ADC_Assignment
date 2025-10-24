@@ -1,0 +1,8 @@
+../Src/main.c:30:5:main	1
+../Src/main.c:62:6:GPIO_Init	1
+../Src/main.c:83:6:UART_Init	1
+../Src/main.c:94:6:UART_SendChar	2
+../Src/main.c:102:6:UART_SendNumber	4
+../Src/main.c:124:6:Adc_Init	1
+../Src/main.c:133:10:Adc_Read_LM35	2
+../Src/main.c:143:6:Delay_ms	2

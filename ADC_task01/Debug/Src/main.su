@@ -1,0 +1,8 @@
+../Src/main.c:30:5:main	16	static
+../Src/main.c:62:6:GPIO_Init	4	static
+../Src/main.c:83:6:UART_Init	16	static
+../Src/main.c:94:6:UART_SendChar	16	static
+../Src/main.c:102:6:UART_SendNumber	32	static
+../Src/main.c:124:6:Adc_Init	8	static
+../Src/main.c:133:10:Adc_Read_LM35	4	static
+../Src/main.c:143:6:Delay_ms	24	static
